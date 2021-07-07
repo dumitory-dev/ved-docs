@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virtual Encrypted Disk</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="scribbler-global.css">
+  <link rel="stylesheet" href="scribbler-doc.css">
+  <link rel="author" href="humans.txt">
+</head>
+
+<body>
+  <div class="doc__bg"></div>
+  <nav class="header">
+    <h1 class="logo">VED <span class="logo__thin">Doc</span></h1>
+    <ul class="menu">
+      <div class="menu__item toggle"><span></span></div>
+      <li class="menu__item"><a href="https://github.com/dumitory/VED-v2" class="link link--dark"><i
+            class="fa fa-github"></i> Github</a></li>
+      <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+    </ul>
+  </nav>
+  <div class="wrapper">
+    <aside class="doc__nav">
+      <ul>
+        <li class="js-btn selected">Main window</li>
+        <li class="js-btn">Create and Open File</li>
+        <li class="js-btn">Mount and Unmount Disk</li>
+        <li class="js-btn">Copy and remove disk</li>
+        <li class="js-btn">Change Theme</li>
+        <li class="js-btn">Console application</li>
+        <li class="js-btn">Install</li>
+        <li class="js-btn">System Requirements</li>
+
+      </ul>
+    </aside>
+    <article class="doc__content">
+
+      <section class="js-section">
+        <h3 class="section__title">Main window</h3>
+        <div class="code__block code__block--notabs">
+          <p><b><img src="images/main.png"></b></p>
+        </div>
+        <p> <span style="font-weight: 600;">Letter</span> - <b>letter of the disk</b></p>
+        <p> <span style="font-weight: 600;">Path</span> - <b>path to the file </b></p>
+        <p> <span style="font-weight: 600;">Size </span> - <b>file size in megabytes</b></p>
+        <p> <span style="font-weight: 600;">Is mounted </span> - <b>disk status </b></p>
+        <hr />
+      </section>
+
+      <section class="js-section">
+        <h3 class="section__title">Create and Open File</h3>
+        <div class="code__block code__block--notabs">
+          <p><b><img src="images/create.png"></b></p>
+        </div>
+        <p><b>To create a disk, press File and select New, a create file menu will appear.</b></p>
+        <p><b>1. Enter the file path in File path, or choose where to save the file with explorer </b></p>
+        <p><b>2. Enter the file size in File size</b></p>
+        <p><b>3. Enter the file password in File password</b></p>
+        <p><b>4. Select the encryption mode in Crypt Mode and press Ok. <b> <b>
+                If everything was successful, you will see the created file in the main window.</b></p>
+
+        <p></b>To open a disk, press File and select Open, Then select the desired file in Explorer and it will appear
+          on the main screen.</b></p>
+
+        <hr />
+      </section>
+
+      <section class="js-section">
+        <h3 class="section__title">Mount and Unmount Disk</h3>
+        <div class="code__block code__block--notabs">
+          <p><b><img src="images/mount.png"></b></p>
+        </div>
+        <p><b>To mount a disk, select it from the list and press mount.</b></b></p>
+        <p><b>1. Enter the file password</b></b></p>
+        <p><b>2. Enter the drive letter. Only available letters are listed, so don't worry!</b></b></p>
+        <p><b>If all is well, you will see that on the main screen of the selected drive the isMounted property has
+            changed and the drive letter has been added. Now go to explorer and use the disk!</b></b></p>
+        <p><b>To unmount a disk, simply select it on the main screen and press unmount</b></b></p>
+
+        <hr />
+      </section>
+
+      <section class="js-section">
+        <h3 class="section__title">Copy and remove disk</h3>
+        <div class="code__block code__block--notabs">
+          <p><b><img src="images/remove_and_copy.png"></b></p>
+        </div>
+        <p><b style="color:#5c5b5b">To remove a disk from the list, right-click on the selected disk and click
+            delete</b></p>
+        <p><b>To copy a disk from the list right-click on the selected disk and click CopyTo, then use explorer to
+            select the copy location</b></p>
+
+        <hr />
+      </section>
+
+      <section class="js-section">
+        <h3 class="section__title">Change theme</h3>
+        <div class="code__block code__block--notabs">
+          <p><b><img src="images/theme.png"></b></p>
+        </div>
+        <p>To change the theme of the application, click Theme and select a black or light theme</b></p>
+
+        <hr />
+      </section>
+
+
+      <section class="js-section">
+        <h3 class="section__title">Console application</h3>
+        <div class="code__block code__block--notabs">
+          <p><b><img src="images/cli.png"></b></p>
+        </div>
+        <p>You can also use the CLI. Using the console, go to the folder with the installed application and type: </b>
+        </p>
+
+        <pre class="code code--block">
+          <code>
+            ved.exe -help
+          </code>
+        </pre>
+
+        <hr />
+      </section>
+
+      <section class="js-section">
+        <h3 class="section__title">Install</h3>
+        <p><b>Open the console as administrator and type the following command:</b></p>
+        <pre class="code code--block">
+            <code>
+              bcdedit -set TESTSIGNING ON
+            </code>
+          </pre>
+        <p><b>Then restart the computer </b></p>
+        <hr />
+        <div class="code__block code__block--notabs">
+          <p><b><img src="images/install.jpg"></b></p>
+        </div>
+        <p><b>Download the installer from the <a style="color: red;"
+              href="https://github.com/dumitory/VED-v2/releases">link</a> and install the application</b></p>
+        <p><b>The project is compiled and runs on x86, but only the x64 version is currently available.</b></p>
+
+        <hr />
+      </section>
+
+      <section class="js-section">
+        <h3 class="section__title">System Requirements</h3>
+        <table id="customers">
+
+          <tr>
+            <td>OS</td>
+            <td>Windows 10 (X64)</td>
+          </tr>
+          <tr>
+            <td>CPU</td>
+            <td>1 gigahertz (GHz) or faster processor or SoC.</td>
+          </tr>
+          <tr>
+            <td>Memory</td>
+            <td>2 GB for 64-bit</td>
+          </tr>
+          <tr>
+            <td>Hard disk space</td>
+            <td>100 mb.</td>
+          </tr>
+          <tr>
+            <td>Display</td>
+            <td>800 x 600</td>
+          </tr>
+        </table>
+        <hr />
+      </section>
+
+      <section class="js-section">
+        <h3 class="section__title">LICENSE</h3>
+        <p><b> <b> MIT License </b>
+
+            Copyright (c) 2021 dumitory
+
+            Permission is hereby granted, free of charge, to any person obtaining a copy
+            of this software and associated documentation files (the "Software"), to deal
+            in the Software without restriction, including without limitation the rights
+            to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+            copies of the Software, and to permit persons to whom the Software is
+            furnished to do so, subject to the following conditions:
+
+            The above copyright notice and this permission notice shall be included in all
+            copies or substantial portions of the Software.
+          </b></p>
+        <p><b>
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+            IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+            FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+            AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+            LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+            OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+            SOFTWARE.</b></p>
+
+      </section>
+    </article>
+  </div>
+
+  <footer class="footer">Virtual Encrypted Disk | Dumitory 2021 |</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="scribbler.js"></script>
+</body>
+
+</html>
